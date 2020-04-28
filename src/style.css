@@ -1,0 +1,21 @@
+body{
+font-family: sans-serif;
+font-size: 78pt;
+ padding:0.3em;
+}
+
+div{
+  position: absolute;
+  width:auto;
+  background: #07ff93;
+}
+
+p{
+font-size:0.5em;
+background:red;
+}
+
+footer{
+ font-style: italic;!important
+ background-color:#rgba(255, 0, 0, 0.5);
+}
