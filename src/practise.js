@@ -1,7 +1,7 @@
 
 // simple practise
 alert(" Practice makes Perfect");
-console.log("hello world");
+console.log("hello ! thank you, thank you very much !");
 
 let age =25;
 let year = 2019;
