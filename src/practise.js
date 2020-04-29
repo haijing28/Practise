@@ -1,5 +1,6 @@
-
+// following youtube tutorial by https://www.youtube.com/watch?v=FhguwBJeqWs
 // simple practise
+
 alert(" Practice makes Perfect");
 console.log("hello world");
 
@@ -83,7 +84,6 @@ let replace = emailNext.replace("o","c");
 console.log(replace);
 
 
-
 //++ NOW ITS TIME FOR NUMBERS & MATHS ++
 // data type: numbers
 
@@ -131,18 +131,15 @@ console.log(likes);
 
 
 // NaN - Not a Number
-
-console.log(5/"hello"); //calculation doesnt have number result. prop error
+console.log(5/"hello"); //calculation doesnt have number result. perhaps error
 
 //proper way to concatenate numbers
-
 let veryImpressive = "My Instagram Post have "+ likes +' WoW ';
 console.log(veryImpressive);
 
 
 // & letsmakeitsimple concatenate
 // different version of a string "const"
-
 
 
 const title = " Bible is written by God ";
@@ -153,7 +150,7 @@ const compliment = 1000;
 let experiments = "The Truth Called" + title + "by" + author + "has " + compliment + " likes" ;
 console.log(experiments);
 
-// template string way
+// * template string way there way go *
 // Template strings:
 // inject variables into the string
 // without having to exit out using the plus sign to concatenate them.
