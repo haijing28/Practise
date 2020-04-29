@@ -1,6 +1,10 @@
+// Modern JavaScript Tutorial #2 - Syntax Basics & Types
+// Youtube reference: https://youtu.be/FhguwBJeqWs
+// All JS codes are followed with Youtube Bogger: TheNetNinja 's Tutorial
+
 
 // simple practise
-alert(" Practice makes Perfect");
+alert(" Practice makes Perfect ");
 console.log("hello world");
 
 let age =25;
@@ -304,3 +308,7 @@ console.log(ortrue,typeof ortrue);//false & boolean,in boolean positive/minus nu
 
 //above are explicite typecovert methods
 //there are also implicite JS does, behind the scene, JS will convert them .
+
+
+
+//End of Modern JavaScript Tutorial #2 - Syntax Basics & Types
