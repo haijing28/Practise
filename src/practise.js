@@ -161,6 +161,7 @@ console.log(experiments);
 let better = `The truth called ${title} by ${author} has ${compliment} likes`;
 console.log(better); // using backticks to replace single or double quotes
 
+// creating html templates
 let html =`
 <h2>${title}</h2>
 <p>By ${author}</p>
@@ -169,4 +170,11 @@ let html =`
 
 console.log(html);
 
-// creating html templates
+
+ // Array  storing collection of data relating to eachother, javasript is a 0 based language
+
+let haijing = ["Unique","Beautiful","Creative","Smart"];
+
+haijing[3] = "Empathetic";
+
+console.log(haijing[3]);
