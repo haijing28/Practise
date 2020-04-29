@@ -9,7 +9,7 @@
 // ["bless""happiness""wedding"] looping toUpperCase()
 
 // Use Conditional Statements for checking conditions
-// if(some condition is true){ do something ...}
+// if(some condition is true){ do sth...}
 
 
 // for loops
@@ -59,6 +59,26 @@ console.log("where are you?", `I am in ${cities[coolplace]}`);
 coolplace++;
 }
 
-
-
 console.log("loop finished");
+
+// do while loop
+// the extension of while loop
+// add condition that while won't work
+
+let somestuff = 2;
+do {
+  console.log("val of i is", somestuff);
+  somestuff++;
+} while (somestuff < 5);
+
+//***----- done for loops -----***
+
+
+
+// if statements
+// aka conditioanl statemenst
+
+const hisAge =101;
+if ( hisAge > 100){
+  console.log("you are not 100 years old");
+}
