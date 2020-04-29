@@ -301,4 +301,6 @@ let orfalse = Boolean(100);
 let ortrue = Boolean(0);
 console.log(orfalse, typeof orfalse); // true & boolean
 console.log(ortrue,typeof ortrue);//false & boolean,in boolean positive/minus nums are True in values, zero is the false number.
- 
+
+//above are explicite typecovert methods
+//there are also implicite JS does, behind the scene, JS will convert them .
