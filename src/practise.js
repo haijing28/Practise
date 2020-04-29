@@ -186,7 +186,6 @@ console.log(ages[2]);
 
 let random =["Unique","Beautiful",30,20];
 console.log(random);
-
 console.log(haijing.length);
 
 // array methods intro
@@ -200,3 +199,89 @@ console.log(descriptions);
 
 let valid = haijing.indexOf("Creative");
 console.log(valid);
+
+// concat()
+// using concatenation to join arrays together
+let beloved = haijing.concat(["cats","dogs","penguin","polarbear"]);
+console.log(beloved);
+
+//push() push on a new value onto the array
+// what it does it to return the new length of the previous array
+let productive = haijing.push("strong");
+console.log(productive);
+console.log(haijing);//in this case we have originally variable having a new value
+
+//pop() what pop does it to change the end value.
+let confidence = haijing.pop(); //that means we poped off value"strong".
+console.log(haijing);
+
+//* New Data Type *
+// Chapter of " Null & undefined "
+// represents without value, Null is for intentional & undefined is not.
+
+let smart;
+console.log(smart, smart+3, `the smart is ${smart}`); // example of undefined
+
+let smartii = null;
+console.log(smartii, smartii+3, `the smart is ${smartii}`); // example of null
+
+// * New New DataType *
+// Booleans True & False
+// Booleans & comparisons
+console.log(true,false,"string true","string false");
+
+// methods can return booleans
+let emailAfter = "haijing@icloud.com";
+let nameNames = ["boys","girls","man","woman","baby"];
+
+let thisResult = emailAfter.includes("@");
+let thatResult =nameNames.includes("alien");
+
+console.log(thisResult);
+console.log(thatResult);
+
+// comparison operators
+// using comparison operators to compare two things together
+// == ; != means true/false
+// all belows returning booleans
+
+let counts = 25;
+console.log(counts == 25);
+console.log(counts == 45);
+console.log(counts != 30); //true
+
+console.log(counts != 25); //false
+console.log(counts < 10);
+console.log(counts <= 25);
+
+
+let userID = "haijing28";
+
+console.log(userID == "haijing28");
+console.log(userID == "Haijing28");
+console.log(userID > "david"); //first alphet of h comes later than d, so this is true
+console.log(userID > "Haijing");// lowercase is greater than capital cases, so this is true
+console.log(userID > "David"); //lowercase is greater than all capitalcases (comes later then greater),so this is true.
+
+
+// lets moveon and go deeper in comparison
+
+let boyfriend = 100;
+
+// operating methods - loose comparison (different types can still be equal)
+
+console.log(boyfriend == 100);
+console.log(boyfriend == "100"); // different datatypes (num, string ) can be equal,js itself do the evaluation
+console.log(boyfriend != 100); //false
+console.log(boyfriend != "100"); //principle loose comparison
+
+// operating methods - strict comparison (different types can not be equal)
+console.log(boyfriend === 100);
+console.log(boyfriend === "100"); // a number can not equal to string.
+console.log(boyfriend !== 100);
+console.log(boyfriend !== "100");
+
+// type coversion , turning one datatype into another datatype
+let boyfriendplus = "99" ;
+boyfriendplus = Number(boyfriendplus); //this is to turning string into number.
+console.log(boyfriendplus + 1); //without conversion the result is 991,in this case we need type conversion, as above
