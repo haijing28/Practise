@@ -285,3 +285,20 @@ console.log(boyfriend !== "100");
 let boyfriendplus = "99" ;
 boyfriendplus = Number(boyfriendplus); //this is to turning string into number.
 console.log(boyfriendplus + 1); //without conversion the result is 991,in this case we need type conversion, as above
+
+console.log(typeof boyfriendplus); //if to comment out the type conversion then consolelog result would be string.
+
+let nonsense = Number("nonsense");
+console.log(nonsense); //NaN
+
+let strings = String(99.9);
+console.log(strings);
+console.log(typeof strings);
+console.log(strings, typeof strings); // number is blue in developer console, when its black that indicates string.
+
+//typeconvert to boolean
+let orfalse = Boolean(100);
+let ortrue = Boolean(0);
+console.log(orfalse, typeof orfalse); // true & boolean
+console.log(ortrue,typeof ortrue);//false & boolean,in boolean positive/minus nums are True in values, zero is the false number.
+ 
