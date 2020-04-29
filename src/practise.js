@@ -190,6 +190,13 @@ console.log(random);
 console.log(haijing.length);
 
 // array methods intro
-
+// join() add values in array variables' between
 let see = haijing.join(","+ `${likes}`);
 console.log(see);
+
+// Indexof()
+let descriptions = haijing.indexOf("Smart"); // Note when a value is overwritten, IndexOf could not get that value and returns with "-1";
+console.log(descriptions);
+
+let valid = haijing.indexOf("Creative");
+console.log(valid);
