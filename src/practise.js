@@ -1,6 +1,5 @@
-// following youtube tutorial by https://www.youtube.com/watch?v=FhguwBJeqWs
-// simple practise
 
+// simple practise
 alert(" Practice makes Perfect");
 console.log("hello world");
 
@@ -84,6 +83,7 @@ let replace = emailNext.replace("o","c");
 console.log(replace);
 
 
+
 //++ NOW ITS TIME FOR NUMBERS & MATHS ++
 // data type: numbers
 
@@ -131,15 +131,18 @@ console.log(likes);
 
 
 // NaN - Not a Number
-console.log(5/"hello"); //calculation doesnt have number result. perhaps error
+
+console.log(5/"hello"); //calculation doesnt have number result. prop error
 
 //proper way to concatenate numbers
+
 let veryImpressive = "My Instagram Post have "+ likes +' WoW ';
 console.log(veryImpressive);
 
 
 // & letsmakeitsimple concatenate
 // different version of a string "const"
+
 
 
 const title = " Bible is written by God ";
@@ -150,7 +153,7 @@ const compliment = 1000;
 let experiments = "The Truth Called" + title + "by" + author + "has " + compliment + " likes" ;
 console.log(experiments);
 
-// * template string way there way go *
+// template string way $ & backticks
 // Template strings:
 // inject variables into the string
 // without having to exit out using the plus sign to concatenate them.
@@ -158,7 +161,8 @@ console.log(experiments);
 let better = `The truth called ${title} by ${author} has ${compliment} likes`;
 console.log(better); // using backticks to replace single or double quotes
 
-// creating html templates
+// using template string way to
+// create html templates
 let html =`
 <h2>${title}</h2>
 <p>By ${author}</p>
@@ -168,10 +172,24 @@ let html =`
 console.log(html);
 
 
- // Array  storing collection of data relating to eachother, javasript is a 0 based language
+ // Array Storing the collection of data relating to eachother, javasript is a 0 based language
+ // Array Sytax variable = ["xx","xx","xx"]
 
-let haijing = ["Unique","Beautiful","Creative","Smart"];
+let haijing = ["Unique", "Beautiful", "Creative", "Smart"];
+console.log(haijing);
 
-haijing[3] = "Empathetic";
-
+haijing[3] = "Empathetic"; // overwrite position values
 console.log(haijing[3]);
+
+let ages =[20,25,30,35];
+console.log(ages[2]);
+
+let random =["Unique","Beautiful",30,20];
+console.log(random);
+
+console.log(haijing.length);
+
+// array methods intro
+
+let see = haijing.join(","+ `${likes}`);
+console.log(see);
