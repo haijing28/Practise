@@ -113,14 +113,36 @@ else{
 //check multiple different conditions at a time using elseif
 
 
+
 //logical NOT (!)
 // without logical not statement, conditional runs when its true only.
 
 let user = false;
 
 if(!user){
-console.log('hahahaha you must be loggedin');
+console.log('hahahaha you must be logged in to continue');
 }
-
 console.log(!true); //false
 console.log(!false);//ture
+
+// break & continue
+
+const scores = [10,34,20,0,55,65,100,70,11,23];
+
+for(let a = 0; a < scores.length; a++ ){
+  console.log("your score", typeof scores[a], scores[a]); //getnum
+  console.log("your score", typeof `${scores[a]}`,`${scores[a]}`);//getstring
+
+if(scores[a]===0){
+  continue;
+}
+
+console.log("jumpping 0",scores[a]);
+
+   if(scores[a]===11){
+     console.log("congrats, you are the second last one!");
+     break; // this means the loop breaks at num "11",& "23" is not counted in this loop 
+
+   }
+
+}
