@@ -4,7 +4,43 @@
 
 
 // Control Flow Briefs
+
 // Use Loops for cycling through data
 // ["bless""happiness""wedding"] looping toUpperCase()
+
 // Use Conditional Statements for checking conditions
 // if(some condition is true){ do something ...}
+
+
+// for loops
+//i=0 initializing, i<5 condition like true of false, i++ final epxression to exucte
+for(let i =0; i< 5; i++){
+
+console.log("in loop",i);
+
+} //{} code block for that loop
+
+console.log("loop finished");
+
+
+const names = ["bless","happiness","wedding" ];
+
+for(let i=0; i<names.length; i++){
+  //console.log("in loop",i);
+  //console.log(names[i]);
+ let html =`<div>${names[i]}</div>`;
+ console.log(html);
+
+}
+
+// while Loops
+// syntax difference
+// decalring the variable value before the function, add final expression in the code block
+
+let d = 0;
+while(d < 5){
+console.log("in loop",d);
+d++;
+}
+
+console.log("loop finished");
