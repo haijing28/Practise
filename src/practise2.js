@@ -77,6 +77,7 @@ do {
 // if statements
 // aka conditional statemenst
 // sequencing: if statements; if else statements; if elseif else statesments
+// logical operators: && stands for and, || stands for or
 
 const hisAge =101;
 if ( hisAge > 100){
@@ -91,13 +92,13 @@ if(places.length >2 ){
 
 } // if the userisloggedin we shall check sth
 
-const password = "p@ssw0";
+const password = "p@ss";
 
-if(password.length >=12 ){
+if(password.length >=12 && password.includes("@") ){ //&& logical operator "and"
 console.log("that password is might strong");
 
-} else if (password.length >=8){
-    console.log("that password is long enough");
+} else if (password.length >=8 || password.includes("@") ){ // || logicl operator "or"
+    console.log("that password is strong enough");
 }
 
 // if(password.length >=8){
@@ -105,7 +106,7 @@ console.log("that password is might strong");
 // }
 
 else{
-  console.log("that password is not long enough");
+  console.log("that password is not strong enough");
 }
 
 //check multiple different conditions at a time using elseif
