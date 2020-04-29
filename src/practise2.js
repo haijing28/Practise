@@ -43,4 +43,19 @@ console.log("in loop",d);
 d++;
 }
 
+
+const cities = ["berlin","shanghai","new york city","paris","stockholm","chengdu","taipei","sydney"];
+
+let city =0;
+
+// while(city < cities.length){
+//   console.log("in loop",city);
+//   city++;
+// }
+
+while(city<8){
+console.log("where are you",`${cities[city]}`);
+city++;
+}
+
 console.log("loop finished");
