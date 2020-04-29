@@ -48,14 +48,17 @@ const cities = ["berlin","shanghai","new york city","paris","stockholm","chengdu
 
 let city =0;
 
-// while(city < cities.length){
-//   console.log("in loop",city);
-//   city++;
-// }
-
-while(city<8){
-console.log("where are you",`${cities[city]}`);
+while(city < cities.length){
+console.log("terminal",cities[city]);
 city++;
+ }
+
+let coolplace =0;
+while(coolplace < cities.length){
+console.log("where are you?", `I am in ${cities[coolplace]}`);
+coolplace++;
 }
+
+
 
 console.log("loop finished");
