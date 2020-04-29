@@ -113,7 +113,6 @@ else{
 //check multiple different conditions at a time using elseif
 
 
-
 //logical NOT (!)
 // without logical not statement, conditional runs when its true only.
 
@@ -141,8 +140,10 @@ console.log("jumpping 0",scores[a]);
 
    if(scores[a]===11){
      console.log("congrats, you are the second last one!");
-     break; // this means the loop breaks at num "11",& "23" is not counted in this loop 
-
+     break; // this means the loop breaks at num "11",& "23" is not counted in this loop
    }
 
 }
+
+// will do switch on the last of April .
+// Good night 

@@ -1,7 +1,6 @@
 // Modern JavaScript Tutorial #2 - Syntax Basics & Types
 // Youtube reference: https://youtu.be/FhguwBJeqWs
 // All JS codes are followed with Youtube Bogger: TheNetNinja 's Tutorial
-// Kindly note: you need a localhost to review this with your own browser, pls bear with me for gramma & typo s.  
 
 
 // simple practise
