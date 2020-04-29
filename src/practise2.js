@@ -71,14 +71,41 @@ do {
   somestuff++;
 } while (somestuff < 5);
 
-//***----- done for loops -----***
-
+//***----- done for "loops" -----***
 
 
 // if statements
-// aka conditioanl statemenst
+// aka conditional statemenst
+// sequencing: if statements; if else statements; if elseif else statesments
 
 const hisAge =101;
 if ( hisAge > 100){
   console.log("you are not 100 years old");
 }
+
+const places = ["berlin","shanghai","new york city","paris","stockholm","chengdu","taipei","sydney"];
+
+if(places.length >2 ){
+
+  console.log("hello world");
+
+} // if the userisloggedin we shall check sth
+
+const password = "p@ssw0";
+
+if(password.length >=12 ){
+console.log("that password is might strong");
+
+} else if (password.length >=8){
+    console.log("that password is long enough");
+}
+
+// if(password.length >=8){
+//   console.log("that password is long enough");
+// }
+
+else{
+  console.log("that password is not long enough");
+}
+
+//check multiple different conditions at a time using elseif
