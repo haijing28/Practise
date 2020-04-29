@@ -77,7 +77,8 @@ do {
 // if statements
 // aka conditional statemenst
 // sequencing: if statements; if else statements; if elseif else statesments
-// logical operators: && stands for and, || stands for or
+// logical operators: && AND, || OR
+// logical condition: logical NOT (!)
 
 const hisAge =101;
 if ( hisAge > 100){
@@ -110,3 +111,16 @@ else{
 }
 
 //check multiple different conditions at a time using elseif
+
+
+//logical NOT (!)
+// without logical not statement, conditional runs when its true only.
+
+let user = false;
+
+if(!user){
+console.log('hahahaha you must be loggedin');
+}
+
+console.log(!true); //false
+console.log(!false);//ture
