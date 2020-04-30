@@ -214,6 +214,6 @@
     console.log("ouside code block", date);
 
     //var will ignore block scope. we can even access var after the code blocks
-    //in this case we recommnd let & const to be the modern way of defining variables.
+    //in this case we recommend "let" & "const" to be the modern way of defining variables.
 
-   //code practise done for Modern JavaScript Tutorial #3 - Control Flow
+   //End of Modern JavaScript Tutorial #3 - Control Flow
