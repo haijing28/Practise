@@ -18,7 +18,7 @@
 // -- no semicolon after function declarations
 
 function goodnight(){
-  console.log("I love universal value"); // we just wrote the function but have not yet call it
+  console.log("We love universal value"); // we just wrote the function but have not yet call it
 }
 
 goodnight(); //run the function
@@ -40,5 +40,24 @@ speak();
 // - functions are all declared (function declaration) go before all the other javascripts
 // -- that means javascript will highest "function declarations" other than else, such as "function expressions"
 // -- you can write wherever the function declaration code you want in JS but its logically not neat & clear
-// -- By using "function expression" instead of "function decaration" 
+// -- By using "function expression" instead of "function decaration"
 // --- we declare it first before we using them and without js' own highest.
+
+
+// arguments & parameter
+// asign variables in functions
+
+const bark = function(name){ //parameter
+  console.log(`have a good day ${name}`); //now we see template string again.
+}; //name variable has the scope of this function
+
+bark("Haijing"); //input "Haijing" as a value to assigned be inside the variable we defined in our function.
+//aka arguments
+
+const doubled = function(cities ="London", time="Good night"){
+
+  console.log(`hello ${cities}`,time);
+};
+
+doubled("shanghai","Good morning");
+doubled();// in case of undefined we'd do some default values.
