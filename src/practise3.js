@@ -92,9 +92,10 @@ const calcInfinite = function(whatever){ // here we've created a parameter calle
 
    const pi = 3.14;
 
-   let infinity = pi * whatever ** 2 ; //** == squared or powered  
-
+   // let infinite = pi * whatever ** 2 ; //** == squared or powered  
    // with this created variable, means now we have that area value. 
+
+   return pi * whatever ** 2 ; // we can return it directly without store it locally first. A SIMPLE WAY 
 
    // console.log(area); // this could work, but we won't use. 
    // cuz console.log(area) won't help in storing data/values out of this codeblock
@@ -103,17 +104,17 @@ const calcInfinite = function(whatever){ // here we've created a parameter calle
    // so if we want to use the value/data later on outside of this function. 
    // we use return to make it happen 
 
-   console.log(infinity);
+   // console.log(infinite);
   
-   return infinity; // in this case we want to return the variable area. 
+   // return infinite; // in this case we want to return the variable area. 
 
 };
 
 
 // calcArea(8); //in return, we are not calling the variable with values anymore,instead we returning a value. 
 
-const In = calcInfinite(1);  //store the returned value(area) in a variable 
+const Inf = calcInfinite(5);  //store the returned value(area) in a variable  with global scope
 
-console.log(In); 
+console.log(Inf);  
 
 
