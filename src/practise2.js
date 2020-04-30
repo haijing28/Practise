@@ -148,6 +148,8 @@ console.log("jumpping 0",scores[a]);
 // will do switch on the last of April .
 // Good night 
 
+
+
 // switch statement
 // checking multiple possible values of a single variable is to use switch statement.
 
@@ -191,10 +193,21 @@ console.log("jumpping 0",scores[a]);
 // and "break" to get the result that matches. 
 
 
+// variables & block scope 
+
+let creative = 100; // 
+
+if(true){
 
 
 
-// Using if statement
+
+}
+
+
+//code blocks run the brackets condition code are true 
+
+
 
 
 
