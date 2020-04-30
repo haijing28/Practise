@@ -88,11 +88,11 @@ corona();
 // - instead of we assigning values inside of it.
 // - return helps us receive this value, so we can deal with it later on. 
 
-const calcArea = function(radius){ // here we've created a parameter called radius. 
+const calcInfinite = function(whatever){ // here we've created a parameter called radius. 
 
    const pi = 3.14;
 
-   let area = pi * radius ** 2; //** == squared or powered  
+   let infinity = pi * whatever ** 2 ; //** == squared or powered  
 
    // with this created variable, means now we have that area value. 
 
@@ -103,14 +103,17 @@ const calcArea = function(radius){ // here we've created a parameter called radi
    // so if we want to use the value/data later on outside of this function. 
    // we use return to make it happen 
 
-   return area; // in this case we want to return the variable area. 
+   console.log(infinity);
+  
+   return infinity; // in this case we want to return the variable area. 
+
 };
 
 
-// calcArea(8); // not calling the variable with values anymore,
+// calcArea(8); //in return, we are not calling the variable with values anymore,instead we returning a value. 
 
-const area = calcArea(8);  // instead we returning a value. 
+const In = calcInfinite(1);  //store the returned value(area) in a variable 
 
-console.log(area);
+console.log(In); 
 
 
