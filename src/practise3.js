@@ -118,3 +118,24 @@ const Inf = calcInfinite(5);  //store the returned value(area) in a variable  wi
 console.log(Inf);  
 
 
+// -- done for return values -- 
+
+
+
+
+
+// Arrow Functions
+// - offers a cleaner & shorter way to write functions 
+// - a more modern edition of JS 
+
+const calcInfinite2 = ( whatsever) => {
+
+
+const pi = 3.14;
+return pi * whatsever ** 2 ;
+
+};
+
+const Infs = calcInfinite2(5);  
+console.log(Infs);
+
