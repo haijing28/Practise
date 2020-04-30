@@ -123,19 +123,33 @@ console.log(Inf);
 
 
 
-
 // Arrow Functions
-// - offers a cleaner & shorter way to write functions 
+
 // - a more modern edition of JS 
+// - offers a cleaner & shorter way to write functions 
+// - don't have to declare "function" firstly 
+// - and is started with parethesis () after the equal symbol =
+// - simplified ways to write functions 
 
-const calcInfinite2 = ( whatsever) => {
+const calcInfinite2 = (whatsever) => { // we need parenthesis with more than one parameter. 
 
+// const calcInfinite2 = whatsever => { // even without parenthesis code works, !and only applicable when we only have one parameters. 
+// const calcInfinite2 =() => //but when there is no parameter, we always need the parenthesis symbol to make sure the function is not an err. 
 
 const pi = 3.14;
 return pi * whatsever ** 2 ;
 
+
 };
 
 const Infs = calcInfinite2(5);  
-console.log(Infs);
+
+console.log("CalculatedInfinity is", Infs); 
+
+// notes done @20:30 of the video && we will continue tmr good night sweety. 
+
+// Stayfocused & be the one 
+
+
+
 
