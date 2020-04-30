@@ -14,6 +14,7 @@
 
 // let's prectise
 
+// function declaration & function expression 
 // ! function declaration
 // -- no semicolon after function declarations
 
@@ -43,23 +44,30 @@ speak();
 // -- By using "function expression" instead of "function decaration"
 // --- we declare it first before we using them and without js' own highest.
 
+// -- done for function declaration & function expression --
 
-// arguments & parameter
-// asign variables in functions
 
-const bark = function(name){ //parameter
+
+
+
+// arguments & parameters
+// - asign variables in functions
+// - arguments passing values into parameters
+
+const bark = function(name){ //parameter, in this case no defualt value. 
   console.log(`have a good day ${name}`); //now we see template string again.
 }; //name variable has the scope of this function
 
 bark("Haijing"); //input "Haijing" as a value to assigned be inside the variable we defined in our function.
-//aka arguments
+//aka argument
 
 const doubled = function(cities ="London", time="Good night"){
 
-  console.log(`hello ${cities}`,time);
+  console.log(`hello ${cities}`,time);  
 };
 
-doubled("shanghai","Good morning");
+// console.log(`hello ${cities}`,time); //this will fail(error), variables can not be console.logged outside of this function codeblock. since its defined locally.
+doubled("shanghai","Good morning"); 
 doubled(); // in case of undefined we'd do some default values.
 
 
@@ -71,17 +79,38 @@ const corona = function(name="SARS-Cov-2", life="228908"){
 
 corona();
 
+// -- done for arguments & parameters --
+
+
+
 // returning values
 // - when we want to have a function that could actually return a value to us
 // - instead of we assigning values inside of it.
+// - return helps us receive this value, so we can deal with it later on. 
 
+const calcArea = function(radius){ // here we've created a parameter called radius. 
 
-const calcArea = function(radius){
+   const pi = 3.14;
 
-   let area = 3.14 * radius ** 2;
-   // console.log(area);
-   return area;
+   let area = pi * radius ** 2; //** == squared or powered  
+
+   // with this created variable, means now we have that area value. 
+
+   // console.log(area); // this could work, but we won't use. 
+   // cuz console.log(area) won't help in storing data/values out of this codeblock
+   // console.log(area) without storing it anywhere else than locally.  
+
+   // so if we want to use the value/data later on outside of this function. 
+   // we use return to make it happen 
+
+   return area; // in this case we want to return the variable area. 
 };
 
-const a = calcArea(5);
-console.log(a); 
+
+// calcArea(8); // not calling the variable with values anymore,
+
+const area = calcArea(8);  // instead we returning a value. 
+
+console.log(area);
+
+
