@@ -60,4 +60,28 @@ const doubled = function(cities ="London", time="Good night"){
 };
 
 doubled("shanghai","Good morning");
-doubled();// in case of undefined we'd do some default values.
+doubled(); // in case of undefined we'd do some default values.
+
+
+// more practice
+const corona = function(name="SARS-Cov-2", life="228908"){
+
+   console.log(`CoronaVirus AKA ${name} has taken`,`${life} lives`);
+};
+
+corona();
+
+// returning values
+// - when we want to have a function that could actually return a value to us
+// - instead of we assigning values inside of it.
+
+
+const calcArea = function(radius){
+
+   let area = 3.14 * radius ** 2;
+   // console.log(area);
+   return area;
+};
+
+const a = calcArea(5);
+console.log(a); 
