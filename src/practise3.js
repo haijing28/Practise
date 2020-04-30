@@ -37,6 +37,8 @@ const speak =  function(){
 speak();
 speak();
 
-// functions are all declared (function declaration) go before all the other javascripts
-// - that means javascript will highest "function declarations" other than else, such as "function expressions"
-// - you can write wherever the function declaration code you want in JS
+// - functions are all declared (function declaration) go before all the other javascripts
+// -- that means javascript will highest "function declarations" other than else, such as "function expressions"
+// -- you can write wherever the function declaration code you want in JS but its logically not neat & clear
+// -- By using "function expression" instead of "function decaration" 
+// --- we declare it first before we using them and without js' own highest.
