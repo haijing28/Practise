@@ -186,6 +186,9 @@ console.log("jumpping 0",scores[a]);
 
   }
 
+// if we want to run switch propperly as how we wish
+// we should use "case" to index 
+// and "break" to get the result that matches. 
 
 
 
