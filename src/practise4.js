@@ -43,11 +43,13 @@ let grace = {
      logout:function(){
       console.log("she's logged out");
    },
-     // keyword: this, refers to the user object.
+     // keyword: this
+     // this refers to the user object.
      // "This" is a context object & represents the context in which the current code is executed
      logBlogs:function(){
        this.blogs;
-     //console.log(blogs); //without this we can not define.
+       console.log(this); // we see "this" refers to this object
+       console.log(this.blogs); //without "this" we can not define, with "this" we get exactly where we are. 
   }
 };
 
@@ -58,13 +60,15 @@ grace.login();
 grace.logout();
 
 //grace.logBlogs();
-grace.logBlogs(this);
+grace.logBlogs();
 
 // eg. demo "this" in window object
 //  -- "this" is contextual, and has different values in different code scopes.
 //  -- "this" here, index the global & root context of our code
 //  --  in JS we call the global context an window object
 console.log(this);
+
+
 
 const namename = "HAIJING";
 const stupid = namename.toLowerCase(); //fyi string datatype methods
