@@ -36,20 +36,25 @@ let grace = {
      age:21,
      email:"liuh494@newschool.edu ",
      location:"shanghai",
-     blogs:["Haijing Design","Haijing Code"],
+     blogs:["Haijing Design","Haijing Code","Haijing UX","Haijing Artsy","Haijing Technology"],
      login: function(){
-     console.log("she's logged in"); // method attached to the object
+     console.log("the user logged in"); // method attached to the object
    },
      logout:function(){
-      console.log("she's logged out");
+      console.log("the User logged out");
    },
      // keyword: this
      // this refers to the user object.
      // "This" is a context object & represents the context in which the current code is executed
      logBlogs:function(){
-       this.blogs;
-       console.log(this); // we see "this" refers to this object
-       console.log(this.blogs); //without "this" we can not define, with "this" we get exactly where we are. 
+      this.blogs;
+      console.log(this); // we see "this" refers to this object
+      console.log(this.blogs); //without "this" we can not define, with "this" we get exactly where we are.
+      console.log("This user has written the following blogs:");
+      this.blogs.forEach(blogs =>{ //callback
+        console.log(blogs); //return each blogs defined in the objects.
+      });
+
   }
 };
 
@@ -63,11 +68,10 @@ grace.logout();
 grace.logBlogs();
 
 // eg. demo "this" in window object
-//  -- "this" is contextual, and has different values in different code scopes.
-//  -- "this" here, index the global & root context of our code
-//  --  in JS we call the global context an window object
+//     -- "this" is contextual, and has different values in different code scopes.
+//     -- "this" here, index the global & root context of our code
+//     --  in JS we call the global context an window object
 console.log(this);
-
 
 
 const namename = "HAIJING";
