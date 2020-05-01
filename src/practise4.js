@@ -35,8 +35,27 @@ let grace = {
  age:21,
  email:"liuh494@newschool.edu ",
  location:"shanghai",
- blogs:["Haijing Design","Haijing Code"]
+ blogs:["Haijing Design","Haijing Code"],
+ login: function(){
+  console.log("she's logged in"); // method attached to the object
+},
+ logout:function(){
+  console.log("she's logged out");
+}
  };  // put porperties inside, and each property will have its key value pair
+
+
+// add methods to OBJECTS
+// -- smilar with other datatype methods
+// -- object methods have to define it in the object literal
+
+grace.login();
+grace.logout();
+
+
+const namename = "HAIJING";
+const stupid = namename.toLowerCase(); //fyi string datatype methods
+console.log(stupid);
 
 
 // . dot notation && [] square brackets notation help us to index
@@ -49,11 +68,11 @@ console.log(grace['email']); //square notation index method & using '' to index 
 
 grace['name'] = 'sarah';
 console.log(grace['name']); //rewrite the key value
+grace['name']='alice';
+console.log(grace['name']);
 
+// [] passing variables
 const key = "location";
 console.log(grace.key);  // will get undefined, value "key" is not a defined variable in the grace object
 console.log(grace[key]); // [] will just index the value of variable "key"
-
-// [] passing variables
-//
-//
+console.log(typeof grace,"grace"); // check datatype
