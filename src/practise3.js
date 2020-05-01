@@ -282,4 +282,12 @@ html5 +=`<li style="color: purple">${coolperson}</li>` ; // by this html5 would 
 
 console.log(html5);
 
-ul.innerHTML = html5; //! in html put js file below footer or </body> incase a "porperty innerHTML null" 
+ul.innerHTML = html5; //! in html put js file below footer or </body> incase a "porperty innerHTML null"
+
+//--- done for callback & forEach ---
+
+
+
+
+
+//End of Modern JavaScript Tutorial #4 - Functions
