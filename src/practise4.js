@@ -18,3 +18,42 @@
 //  eg2. a Blog Object
 //    - Properties: title, content, author
 //    - Methods: publish, unpublish, delete
+
+
+// The idea of Objects allows us to create data-structures represent certain things in our code or web applications
+// Javascript has its owen built-in objects, such as date Object, math Object
+// JS also allows us to create our own Objects by using different methods
+// Using Object Literal Notation to create individual Objects
+
+
+// Object Literals
+// - {} we use curly brackets to make objects literal
+// - as how we create array with [];
+
+let grace = {
+ name: "Haijing",
+ age:21,
+ email:"liuh494@newschool.edu ",
+ location:"shanghai",
+ blogs:["Haijing Design","Haijing Code"]
+ };  // put porperties inside, and each property will have its key value pair
+
+
+// . dot notation && [] square brackets notation help us to index
+console.log(grace);
+console.log(grace.blogs); //dot notation helps us index
+
+grace.age = 32;
+console.log(grace.age);
+console.log(grace['email']); //square notation index method & using '' to index string format
+
+grace['name'] = 'sarah';
+console.log(grace['name']); //rewrite the key value
+
+const key = "location";
+console.log(grace.key);  // will get undefined, value "key" is not a defined variable in the grace object
+console.log(grace[key]); // [] will just index the value of variable "key"
+
+// [] passing variables
+//
+//
