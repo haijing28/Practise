@@ -29,33 +29,46 @@
 // Object Literals
 // - {} we use curly brackets to make objects literal
 // - as how we create array with [];
+// - put porperties inside, and each property will have its key value pair
 
 let grace = {
- name: "Haijing",
- age:21,
- email:"liuh494@newschool.edu ",
- location:"shanghai",
- blogs:["Haijing Design","Haijing Code"],
- login: function(){
-  console.log("she's logged in"); // method attached to the object
-},
- logout:function(){
-  console.log("she's logged out");
-}
- };  // put porperties inside, and each property will have its key value pair
-
+     name: "Haijing",
+     age:21,
+     email:"liuh494@newschool.edu ",
+     location:"shanghai",
+     blogs:["Haijing Design","Haijing Code"],
+     login: function(){
+     console.log("she's logged in"); // method attached to the object
+   },
+     logout:function(){
+      console.log("she's logged out");
+   },
+     // keyword: this, refers to the user object.
+     // "This" is a context object & represents the context in which the current code is executed
+     logBlogs:function(){
+       this.blogs;
+     //console.log(blogs); //without this we can not define.
+  }
+};
 
 // add methods to OBJECTS
 // -- smilar with other datatype methods
 // -- object methods have to define it in the object literal
-
 grace.login();
 grace.logout();
 
+//grace.logBlogs();
+grace.logBlogs(this);
+
+// eg. demo "this" in window object
+//  -- "this" is contextual, and has different values in different code scopes.
+//  -- "this" here, index the global & root context of our code
+//  --  in JS we call the global context an window object
+console.log(this);
 
 const namename = "HAIJING";
 const stupid = namename.toLowerCase(); //fyi string datatype methods
-console.log(stupid);
+console.log(stupid); // always need another var to define & so don't repeat yourself
 
 
 // . dot notation && [] square brackets notation help us to index
