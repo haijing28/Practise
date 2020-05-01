@@ -228,6 +228,7 @@ myFunc(value =>{ // with arrow function syntax
 });
 
 // above are the general premise of a callback function
+// -- 一般来说，只要参数是一个函数，那么这个函数就是回调
 // -- done for callback --
 
 
@@ -243,18 +244,17 @@ folks.forEach(individual => {
   console.log(individual);
  });
 
-
 // define a callback function somewhere else and to pass it into the forEach method
 // - using callback functions passing values into methods
 
- const logPerson = (html5, index )=>{
+ const logNames = (Persons, index )=>{
  //
-   console.log(`${index}-hello${person}`)
+   console.log(`${index}-hello ${Persons}`); //stringtemplate
  };
 
-
+folks.forEach(logNames);
 
 // passing more values/elements (property,such as index & length)
-folks.forEach((xxx,index,length) => {
+folks.forEach((xxx, index, length) => {
   console.log(xxx, `number: ${index}`,length);
  });
