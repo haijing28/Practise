@@ -154,6 +154,7 @@ console.log("CalculatedInfinity is", Infs3);
 // GoodAfternoon May 1st
 
 // Practice of Arrow functions
+// regular way
 const greet = () => "hello world";
 const result = greet();
 console.log(result);
@@ -169,6 +170,7 @@ return total;
 
 console.log(bill([10,15,30],0.2));
 
+//arrow function way
 
 const billx =(products,tax) => {
   let total =0;
@@ -179,4 +181,31 @@ const billx =(products,tax) => {
 
 }
 
-console.log("arrow function result",billx([10,15,30],0.2));
+console.log("arrow function result", billx([10,15,30],0.2));
+
+
+// --- intro of  arrow functions done ---
+
+
+// functions & methods
+// - synonymous & different
+
+const empty = "in the begining";
+
+// functions
+// - a block of code do something that can be invoked and run at any point in our code
+// -
+
+const greetings =() => "hey there";
+let outputOne = greetings(); // store thr result, we use function name & parenthesis to invoke
+
+console.log(outputOne);
+
+
+// methods
+// - do something for us on datatypes like, strings & nums, boolean
+// -  ! way we invoke them & how they are defined.
+// -- ! .() dot notation is how we invoke it..
+
+let resultTwo = empty.toUpperCase();
+console.log(resultTwo);
