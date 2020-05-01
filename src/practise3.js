@@ -2,7 +2,6 @@
 // Youtube reference: www.youtube.com/watch?v=xUI5Tsl2JpY
 // All JS codes are followed with Youtube Bogger: TheNetNinja 's Tutorial
 
-
 // ** understand functions **
 // - function helps us find a block of codes to execute what we want.
 // - box of code inside and do specific things.
@@ -48,8 +47,6 @@ speak();
 
 
 
-
-
 // arguments & parameters
 // - asign variables in functions
 // - arguments passing values into parameters
@@ -91,12 +88,10 @@ corona();
 const calcInfinite = function(whatever){ // here we've created a parameter called radius.
 
    const pi = 3.14;
-
    // let infinite = pi * whatever ** 2 ; //** == squared or powered
    // with this created variable, means now we have that area value.
 
    return pi * whatever ** 2 ; // we can return it directly without store it locally first. A SIMPLE WAY
-
    // console.log(area); // this could work, but we won't use.
    // cuz console.log(area) won't help in storing data/values out of this codeblock
    // console.log(area) without storing it anywhere else than locally.
@@ -114,7 +109,6 @@ const calcInfinite = function(whatever){ // here we've created a parameter calle
 // calcArea(8); //in return, we are not calling the variable with values anymore,instead we returning a value.
 
 const Inf = calcInfinite(5);  //store the returned value(area) in a variable  with global scope
-
 console.log(Inf);
 
 
@@ -130,12 +124,10 @@ console.log(Inf);
 // - simplified ways to write functions
 
 const calcInfinite2 = (whatsever) => { // we need parenthesis with more than one parameter.
-
 // const calcInfinite2 = whatsever => { // even without parenthesis code works, !and only applicable when we only have one parameters.
 // const calcInfinite2 =() => //but when there is no parameter, we always need the parenthesis symbol to make sure the function is not an err.
 const pi = 3.14;
 return pi * whatsever ** 2 ;
-
 };
 
 const Infs2 = calcInfinite2(5);
@@ -183,29 +175,86 @@ const billx =(products,tax) => {
 
 console.log("arrow function result", billx([10,15,30],0.2));
 
+// ---done for intro of arrow functions ---
 
-// --- intro of  arrow functions done ---
 
 
 // functions & methods
 // - synonymous & different
+// -- methods are essentially functions
 
 const empty = "in the begining";
 
 // functions
 // - a block of code do something that can be invoked and run at any point in our code
-// -
+// - functions are themselves
 
 const greetings =() => "hey there";
 let outputOne = greetings(); // store thr result, we use function name & parenthesis to invoke
 
 console.log(outputOne);
 
-
 // methods
 // - do something for us on datatypes like, strings & nums, boolean
 // -  ! way we invoke them & how they are defined.
 // -- ! .() dot notation is how we invoke it..
+// --- this means methods are associated with an object, while functions are not.
 
 let resultTwo = empty.toUpperCase();
 console.log(resultTwo);
+
+// -- done for intro of methods & functions --
+
+
+// callbacks & foreach
+// - we can pass values/arguments into functions/methods, when we invoke them
+
+
+// callback function
+// - pass an function as an arguments is a callback function
+// -
+
+const myFunc =(callbackFunc) => {
+ // do something
+ let value =50;
+ callbackFunc(value);
+};
+
+// myFunc(function(value){ //declare that parameter //we then used callbackFunc() to callback this function in the previous one
+
+myFunc(value =>{ // with arrow function syntax
+
+  console.log("my callback function's value is",value);
+});
+
+// above are the general premise of a callback function
+// -- done for callback --
+
+
+
+// forEach method
+// - forEach is a method which iterates over an array, a bit like loop.
+
+let folks =["haijing","alice","sarah","adam","matt","leo","liz"];
+
+// folks.forEach(function(individual){
+// above is the regular way of writting functions
+folks.forEach(individual => {
+  console.log(individual);
+ });
+
+
+// define a callback function somewhere else and to pass it into the forEach method
+// - using callback functions passing values into methods
+
+ const logPerson = (html5, index )=>{
+ //
+   console.log(`${index}-hello${person}`)
+ };
+
+
+
+// passing more values/elements (property,such as index & length)
+folks.forEach((xxx,index,length) => {
+  console.log(xxx, `number: ${index}`,length);
+ });
