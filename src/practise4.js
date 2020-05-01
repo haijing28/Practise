@@ -97,3 +97,7 @@ const key = "location";
 console.log(grace.key);  // will get undefined, value "key" is not a defined variable in the grace object
 console.log(grace[key]); // [] will just index the value of variable "key"
 console.log(typeof grace,"grace"); // check datatype
+
+// Goodnight May the 1st.
+// Keep Writting Code !
+// 15:43
