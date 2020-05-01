@@ -258,3 +258,26 @@ folks.forEach(logNames);
 folks.forEach((xxx, index, length) => {
   console.log(xxx, `number: ${index}`,length);
  });
+
+// get a reference to the "ul"
+//   -- get a reference of an element on the page.
+//   -- to inject an html element, use document query
+
+const ul = document.querySelector(".CoolFolks"); // .CoolFolks are CSS selector
+
+let CoolFolks =["haijing","alice","sarah","adam","matt","leo","liz"];
+
+let html5 =``; // let html becomes empty template string
+
+CoolFolks.forEach(coolperson =>{
+
+  // to create html template for each person
+  //    -- html5 += means to append this html for each person;
+  //    -- "+=" take the current value of the html & adds them to the CoolFolks string.
+  //    -- concatenate this html to the CoolFolks string;
+
+html5 +=`<li style="color: purple">${coolperson}</li>` ; // by this html5 would look like li tags.
+
+});
+
+console.log(html5);
