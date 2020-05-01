@@ -148,11 +148,35 @@ const Infs3 = calcInfinite3(5);
 
 console.log("CalculatedInfinity is", Infs3);
 
-
-
-
 // notes done @20:30 of the video && we will continue tmr good night sweety.
-
 // Stayfocused & be the one
 
 // GoodAfternoon May 1st
+
+// Practice of Arrow functions
+const greet = () => "hello world";
+const result = greet();
+console.log(result);
+
+const bill = function(products, tax){
+let total = 0;
+for (let i =0; i< products.length; i++){
+total += products[i]+products[i]*tax;
+ }
+return total;
+
+};
+
+console.log(bill([10,15,30],0.2));
+
+
+const billx =(products,tax) => {
+  let total =0;
+  for (let i =0; i< products.length; i++){
+  total += products[i]+products[i]*tax;
+   }
+   return total;
+
+}
+
+console.log("arrow function result",billx([10,15,30],0.2));
