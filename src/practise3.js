@@ -281,3 +281,5 @@ html5 +=`<li style="color: purple">${coolperson}</li>` ; // by this html5 would 
 });
 
 console.log(html5);
+
+ul.innerHTML = html5; //! in html put js file below footer or </body> incase a "porperty innerHTML null" 
