@@ -14,7 +14,7 @@
 
 // let's prectise
 
-// function declaration & function expression 
+// function declaration & function expression
 // ! function declaration
 // -- no semicolon after function declarations
 
@@ -54,7 +54,7 @@ speak();
 // - asign variables in functions
 // - arguments passing values into parameters
 
-const bark = function(name){ //parameter, in this case no defualt value. 
+const bark = function(name){ //parameter, in this case no defualt value.
   console.log(`have a good day ${name}`); //now we see template string again.
 }; //name variable has the scope of this function
 
@@ -63,11 +63,11 @@ bark("Haijing"); //input "Haijing" as a value to assigned be inside the variable
 
 const doubled = function(cities ="London", time="Good night"){
 
-  console.log(`hello ${cities}`,time);  
+  console.log(`hello ${cities}`,time);
 };
 
 // console.log(`hello ${cities}`,time); //this will fail(error), variables can not be console.logged outside of this function codeblock. since its defined locally.
-doubled("shanghai","Good morning"); 
+doubled("shanghai","Good morning");
 doubled(); // in case of undefined we'd do some default values.
 
 
@@ -86,70 +86,73 @@ corona();
 // returning values
 // - when we want to have a function that could actually return a value to us
 // - instead of we assigning values inside of it.
-// - return helps us receive this value, so we can deal with it later on. 
+// - return helps us receive this value, so we can deal with it later on.
 
-const calcInfinite = function(whatever){ // here we've created a parameter called radius. 
+const calcInfinite = function(whatever){ // here we've created a parameter called radius.
 
    const pi = 3.14;
 
-   // let infinite = pi * whatever ** 2 ; //** == squared or powered  
-   // with this created variable, means now we have that area value. 
+   // let infinite = pi * whatever ** 2 ; //** == squared or powered
+   // with this created variable, means now we have that area value.
 
-   return pi * whatever ** 2 ; // we can return it directly without store it locally first. A SIMPLE WAY 
+   return pi * whatever ** 2 ; // we can return it directly without store it locally first. A SIMPLE WAY
 
-   // console.log(area); // this could work, but we won't use. 
+   // console.log(area); // this could work, but we won't use.
    // cuz console.log(area) won't help in storing data/values out of this codeblock
-   // console.log(area) without storing it anywhere else than locally.  
+   // console.log(area) without storing it anywhere else than locally.
 
-   // so if we want to use the value/data later on outside of this function. 
-   // we use return to make it happen 
+   // so if we want to use the value/data later on outside of this function.
+   // we use return to make it happen
 
    // console.log(infinite);
-  
-   // return infinite; // in this case we want to return the variable area. 
+
+   // return infinite; // in this case we want to return the variable area.
 
 };
 
 
-// calcArea(8); //in return, we are not calling the variable with values anymore,instead we returning a value. 
+// calcArea(8); //in return, we are not calling the variable with values anymore,instead we returning a value.
 
 const Inf = calcInfinite(5);  //store the returned value(area) in a variable  with global scope
 
-console.log(Inf);  
+console.log(Inf);
 
 
-// -- done for return values -- 
-
-
+// -- done for return values --
 
 
 // Arrow Functions
 
-// - a more modern edition of JS 
-// - offers a cleaner & shorter way to write functions 
-// - don't have to declare "function" firstly 
+// - a more modern edition of JS
+// - offers a cleaner & shorter way to write functions
+// - don't have to declare "function" firstly
 // - and is started with parethesis () after the equal symbol =
-// - simplified ways to write functions 
+// - simplified ways to write functions
 
-const calcInfinite2 = (whatsever) => { // we need parenthesis with more than one parameter. 
+const calcInfinite2 = (whatsever) => { // we need parenthesis with more than one parameter.
 
-// const calcInfinite2 = whatsever => { // even without parenthesis code works, !and only applicable when we only have one parameters. 
-// const calcInfinite2 =() => //but when there is no parameter, we always need the parenthesis symbol to make sure the function is not an err. 
-
+// const calcInfinite2 = whatsever => { // even without parenthesis code works, !and only applicable when we only have one parameters.
+// const calcInfinite2 =() => //but when there is no parameter, we always need the parenthesis symbol to make sure the function is not an err.
 const pi = 3.14;
 return pi * whatsever ** 2 ;
 
-
 };
 
-const Infs = calcInfinite2(5);  
+const Infs2 = calcInfinite2(5);
+console.log("CalculatedInfinity is", Infs2);
 
-console.log("CalculatedInfinity is", Infs); 
+// something we can even do more radically
 
-// notes done @20:30 of the video && we will continue tmr good night sweety. 
+const calcInfinite3 = whatsSoever => 3.14 * whatsSoever ** 2 ; // in this case we returned (3.14 *whatsSoever **2 )
+const Infs3 = calcInfinite3(5);
 
-// Stayfocused & be the one 
+console.log("CalculatedInfinity is", Infs3);
 
 
 
 
+// notes done @20:30 of the video && we will continue tmr good night sweety.
+
+// Stayfocused & be the one
+
+// GoodAfternoon May 1st
