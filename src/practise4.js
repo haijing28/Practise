@@ -213,5 +213,5 @@ folkOne.age = 33;
 console.log(folkOne, folkTwo);
 
 // ^ objects stored in heap changed data
-// ^ pointer index to the references in heap, so both primitives as pointers changed values.
-// ^ reference types stored in two pointer types.
+// ^ pointer index to the references in heap, so both primitives as pointers changed values
+// ^ reference types stored in two pointer types
