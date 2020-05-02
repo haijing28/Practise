@@ -289,5 +289,4 @@ ul.innerHTML = html5; //! in html put js file below footer or </body> incase a "
 
 
 
-
 //End of Modern JavaScript Tutorial #4 - Functions
