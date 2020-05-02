@@ -31,31 +31,46 @@
 // - as how we create array with [];
 // - put porperties inside, and each property will have its key value pair
 
-let grace = {
-     name: "Haijing",
-     age:21,
-     email:"liuh494@newschool.edu ",
-     location:"shanghai",
-     blogs:["Haijing Design","Haijing Code","Haijing UX","Haijing Artsy","Haijing Technology"],
-     login: function(){
-     console.log("the user logged in"); // method attached to the object
-   },
-     logout:function(){
-      console.log("the User logged out");
-   },
-     // keyword: this
-     // this refers to the user object.
-     // "This" is a context object & represents the context in which the current code is executed
-     logBlogs:function(){ // arrow function workd different in a this keyword and won't change it as an object, with this key word, arrow function won't work，and is index to the global window. 
-      this.blogs;
-      console.log(this); // we see "this" refers to this object
-      console.log(this.blogs); //without "this" we can not define, with "this" we get exactly where we are.
-      console.log("This user has written the following blogs:");
-      this.blogs.forEach(blogs =>{ //callback
-        console.log(blogs); //return each blogs defined in the objects.
-      });
 
-  }
+// create objects in an array
+
+const thesis = [
+    { title: 'data & democracy', like:'30' },
+    { title: 'big Beautiful', like:'40' },
+    { title: 'poetic industry', like:'50' }
+];
+
+console.log(thesis);
+
+let grace = {
+       name: "Haijing",
+       age:21,
+       email:"liuh494@newschool.edu ",
+       location:"shanghai",
+       thesis:[ { title: 'data & democracy', like:'30' },
+           { title: 'big Beautiful', like:'40' },
+           { title: 'poetic industry', like:'50' }], // define property as an array
+       // login: function(){
+       login(){ //shorthand version
+       console.log("the user logged in"); // method attached to the object
+      },
+       //logout:function(){
+       logout(){
+        console.log("the User logged out");
+      },
+       // keyword: this
+       // this refers to the user object.
+       // "This" is a context object & represents the context in which the current code is executed
+       // logBlogs:function(){ // arrow function workd different in a this keyword and won't change it as an object, with this key word, arrow function won't work，and is index to the global window.
+      logThesis(){
+        this.blogs;
+        console.log(this); // we see "this" refers to this object
+        console.log(this.thesis); //without "this" we can not define, with "this" we get exactly where we are.
+        console.log("This user has written the following blogs:");
+        this.thesis.forEach(blogs =>{ //callback
+          console.log(thesis.title, thesis.likes); //return each blogs defined in the objects.
+        });
+    }
 };
 
 // add methods to OBJECTS
@@ -65,7 +80,7 @@ grace.login();
 grace.logout();
 
 //grace.logBlogs();
-grace.logBlogs();
+grace.logThesis();
 
 // eg. demo "this" in window object
 //     -- "this" is contextual, and has different values in different code scopes.
@@ -101,3 +116,15 @@ console.log(typeof grace,"grace"); // check datatype
 // Goodnight May the 1st.
 // Keep Writting Code !
 // 15:43
+
+// May02
+// Math Object
+// - js has it own built-in Objects
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);
+
+const area =7.7;
+
+console.log(Math.round(area)); //round 四舍五入约等于
+console.log(Math. (area));
