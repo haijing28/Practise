@@ -169,7 +169,7 @@ console.log(Math.ceil(randoms*100)); // turn random nums into random integers，
 // ---- once scoreOne updated to 100 or any other value, we only have scoreOne updated in memory, and scoreTwo remains initial.
 
 // ---- demo how pointer could be useful
-const UserOne{
+const UserOne = {
   name: "Haijing",
   age:21,
   email:"liuh494@newschool.edu ",
@@ -193,3 +193,21 @@ const UserTwo = UserOne;
 // & in Heap there's no new object created and stored
 // --  once any data updated in the UserOne object
 // --  both pointers with different names index to the Heap stored Object, & updated the data.
+
+
+// Practise on primitive & reference types on stack && heap.
+
+let score7 = 70;
+let score13 = score7;
+
+console.log(`score7: ${score7}`,`score13: ${score13}`);
+score7 = 100;
+
+console.log(`score7: ${score7}`,`score13: ${score13}`);
+// ^ primitive duplicate won't change the redefined value.
+
+
+// reference values
+
+// folkOne ={};
+// folkTwo
