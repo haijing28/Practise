@@ -1,11 +1,11 @@
 # Practise
 
 Syntax Basics & Data Types
-  - Datatype String
+  - String
   - String Concatenation
   - Template String
   - Method & Property
-  - Datatype Number 
+  - Number 
   - Math Operators
   - NAN
   - Array
