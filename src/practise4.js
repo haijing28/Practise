@@ -133,5 +133,6 @@ console.log(Math.trunc(area)); //trunc 函数 取整 truncate
 
 //generate randomnums
 
-const random = Math.random();
-console.log(random);
+const randoms = Math.random();
+console.log(randoms);
+console.log(Math.ceil(randoms*100));
