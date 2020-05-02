@@ -119,12 +119,19 @@ console.log(typeof grace,"grace"); // check datatype
 
 // May02
 // Math Object
-// - js has it own built-in Objects
+// - js has its own built-in Objects
 console.log(Math);
 console.log(Math.PI);
 console.log(Math.E);
 
-const area =7.7;
+const area =7.4;
 
-console.log(Math.round(area)); //round 四舍五入约等于
-console.log(Math. (area));
+console.log(Math.round(area)); //round 函数 四舍五入约等于
+console.log(Math.floor(area)); //floor 函数 向下取整
+console.log(Math.ceil(area));  //Ceil  函数 向上取整
+console.log(Math.trunc(area)); //trunc 函数 取整 truncate
+
+//generate randomnums
+
+const random = Math.random();
+console.log(random);

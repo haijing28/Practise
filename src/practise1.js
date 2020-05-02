@@ -188,8 +188,8 @@ console.log(haijing[3]);
 let ages =[20,25,30,35];
 console.log(ages[2]);
 
-let random =["Unique","Beautiful",30,20];
-console.log(random);
+let meaningful =["Unique","Beautiful",30,20];
+console.log(meaningful);
 console.log(haijing.length);
 
 // array methods intro
