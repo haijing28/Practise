@@ -209,5 +209,12 @@ console.log(`score7: ${score7}`,`score13: ${score13}`);
 
 // reference values
 
-// folkOne ={};
-// folkTwo
+const folkOne = {name: "Jesus", age:32};
+const folkTwo = folkOne;
+
+console.log(folkOne, folkTwo);
+
+folkOne.age = 33;
+console.log(folkOne, folkTwo);
+
+// ^ primitive duplicate won't change the redefined value.
