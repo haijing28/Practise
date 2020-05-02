@@ -46,7 +46,7 @@ let grace = {
      // keyword: this
      // this refers to the user object.
      // "This" is a context object & represents the context in which the current code is executed
-     logBlogs:function(){
+     logBlogs:function(){ // arrow function workd different in a this keyword and won't change it as an object, with this key word, arrow function won't work，and is index to the global window. 
       this.blogs;
       console.log(this); // we see "this" refers to this object
       console.log(this.blogs); //without "this" we can not define, with "this" we get exactly where we are.
