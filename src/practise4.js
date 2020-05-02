@@ -118,6 +118,7 @@ console.log(typeof grace,"grace"); // check datatype
 // 15:43
 
 // May02
+
 // Math Object
 // - js has its own built-in Objects
 console.log(Math);
@@ -134,5 +135,52 @@ console.log(Math.trunc(area)); //trunc 函数 取整 truncate
 //generate randomnums
 
 const randoms = Math.random();
-console.log(randoms);
-console.log(Math.ceil(randoms*100));
+console.log(randoms); // random is initially a decimal num between 0-1
+console.log(Math.ceil(randoms*100)); // turn random nums into random integers， can use round/floor/ceil/trunc
+
+
+
+// Categorizing JS DataTypes
+// Primitive & Reference Types
+
+// -- Primitive Types: numbers, string, booleans, null, undefined, symbols
+// -- Reference Type: all types of objects .eg, objects literals, arrays, functions, dates, all other objects.
+// -- in a nutshell: Reference Type = Objects
+// -- The difference of primitive type & reference type is how they stored.
+
+// - Stack & Heap ｜ Concept of storing data in memory
+// -- Concept of Stack
+// --- storing primitive datatypes, quickly to access but limited
+// ----- primitive stored data(value) locked variable names as an accessor, we use that variable name to index.
+// -- Concept of Heap
+// --- storing reference datatypes, more space & complex but slower
+// ----- Storing objects
+// --------- it adds a pointer to that object on the stack
+// ----------- eg. a pointer in stack as arrays, locked the arrays's name in the pointer.
+// ----------- 以 heap 方式被储存的 数组 命名后，在 stack 中以 pointer 指针 的方式储存此名
+
+ // why pointer is essential ? that affects how we code
+
+ let scoreOne = 50;
+ let scoreTwo = scoreOne;
+ scoreOne = 100;
+ console.log(scoreOne,scoreTwo);
+// ^ in JS we store those nums in stack as two different primitives with name scoreOne & scoreTwo in two different positions.
+// ---- once scoreOne updated to 100 or any other value, we only have scoreOne updated in memory, and scoreTwo remains initial.
+
+// ---- demo how pointer could be useful
+const UserOne{
+  name: "Haijing",
+  age:21,
+  email:"liuh494@newschool.edu ",
+  location:"shanghai",
+};
+
+const UserOne{
+  name: "Haijing",
+  age:25,
+  email:"liuh494@newschool.edu ",
+  location:"New York",
+};
+
+//once any data updated in the object, we can use pointer to index .
