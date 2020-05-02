@@ -1,4 +1,4 @@
-// Modern JavaScript Tutorial #4 - Objects
+// Modern JavaScript Tutorial #5 - Objects
 // Youtube reference: https://www.youtube.com/watch?v=X0ipw1k7ygU
 // All JS codes are followed with Youtube Bogger: TheNetNinja 's Tutorial
 
@@ -88,11 +88,9 @@ grace.logThesis();
 //     --  in JS we call the global context an window object
 console.log(this);
 
-
 const namename = "HAIJING";
 const stupid = namename.toLowerCase(); //fyi string datatype methods
 console.log(stupid); // always need another var to define & so don't repeat yourself
-
 
 // . dot notation && [] square brackets notation help us to index
 console.log(grace);
@@ -137,7 +135,6 @@ console.log(Math.trunc(area)); //trunc 函数 取整 truncate
 const randoms = Math.random();
 console.log(randoms); // random is initially a decimal num between 0-1
 console.log(Math.ceil(randoms*100)); // turn random nums into random integers， can use round/floor/ceil/trunc
-
 
 
 // Categorizing JS DataTypes
@@ -199,10 +196,9 @@ const UserTwo = UserOne;
 
 let score7 = 70;
 let score13 = score7;
-
 console.log(`score7: ${score7}`,`score13: ${score13}`);
-score7 = 100;
 
+score7 = 100;
 console.log(`score7: ${score7}`,`score13: ${score13}`);
 // ^ primitive duplicate won't change the redefined value.
 
@@ -211,10 +207,11 @@ console.log(`score7: ${score7}`,`score13: ${score13}`);
 
 const folkOne = {name: "Jesus", age:32};
 const folkTwo = folkOne;
-
 console.log(folkOne, folkTwo);
 
 folkOne.age = 33;
 console.log(folkOne, folkTwo);
 
-// ^ primitive duplicate won't change the redefined value.
+// ^ objects stored in heap changed data
+// ^ pointer index to the references in heap, so both primitives as pointers changed values.
+// ^ reference types stored in two pointer types.
