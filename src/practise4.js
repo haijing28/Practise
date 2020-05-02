@@ -176,11 +176,20 @@ const UserOne{
   location:"shanghai",
 };
 
-const UserOne{
-  name: "Haijing",
-  age:25,
-  email:"liuh494@newschool.edu ",
-  location:"New York",
-};
+// ^ userOne becomes a pointer in stack as primitive data.
 
-//once any data updated in the object, we can use pointer to index .
+// const UserOne{
+//   name: "Haijing",
+//   age:25,
+//   email:"liuh494@newschool.edu ",
+//   location:"New York",
+// };
+
+//what if the data inside this object updated ?
+
+const UserTwo = UserOne;
+
+// ^ userTwo becomes another pointer in stack that copies pointer UserOne
+// & in Heap there's no new object created and stored
+// --  once any data updated in the UserOne object
+// --  both pointers with different names index to the Heap stored Object, & updated the data.
