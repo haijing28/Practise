@@ -4,27 +4,27 @@ Syntax Basics & Data Types
   - Datatype String
   - String Concatenation
   - Template String
-	- Method & Property
-	- Datatype Number 
-	- Math Operators
-	- NAN
-	- Array
-	- Null & Undefined
-	- Boolean 
-	- Comparison Operators
-	- TypeConvert & Typeof 
-	
+  - Method & Property
+  - Datatype Number 
+  - Math Operators
+  - NAN
+  - Array
+  - Null & Undefined
+  - Boolean 
+  - Comparison Operators
+  - TypeConvert & Typeof 
+
 	
 Control Flow
   - For Loops 
-	- While Loops
-	- If Statement
-	- If Else Statement
+  - While Loops
+  - If Statement
+  - If Else Statement
   - If Elseif Else Statement
-	- Logical Operators 
-	- Break & Continue 
-	- Switch Statement
-	- Variables & Block Scope (Global & Local)
+  - Logical Operators 
+  - Break & Continue 
+  - Switch Statement
+  - Variables & Block Scope (Global & Local)
 	
 	
 Functions
@@ -46,4 +46,7 @@ Objects
  - Pointer
  
  
+ 
 DOM
+ - Intro to DOM
+
