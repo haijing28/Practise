@@ -311,4 +311,5 @@ console.log(ortrue,typeof ortrue);//false & boolean,in boolean positive/minus nu
 
 
 
+
 //End of Modern JavaScript Tutorial #2 - Syntax Basics & Types

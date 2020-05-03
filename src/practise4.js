@@ -7,7 +7,7 @@
 //  what is an Object ?
 //  comparing it with objects in the real life.
 //  real object, eg, a phone, has properties (eg: -color, -size, -model, -etc),
-//                           has function (or 'd say has things todo, eg: -ring, -take a photo, -make a call, -etc)
+//                            has function (or 'd say has things todo, eg: -ring, -take a photo, -make a call, -etc)
 
 //  Objects in javascript have properties & things they can do(methods)
 
@@ -20,7 +20,7 @@
 //    - Methods: publish, unpublish, delete
 
 
-// The idea of Objects allows us to create data-structures represent certain things in our code or web applications
+// The idea of objects allows us to create data-structure represent certain things in our code or web applications
 // Javascript has its owen built-in objects, such as date Object, math Object
 // JS also allows us to create our own Objects by using different methods
 // Using Object Literal Notation to create individual Objects
@@ -29,7 +29,7 @@
 // Object Literals
 // - {} we use curly brackets to make objects literal
 // - as how we create array with [];
-// - put porperties inside, and each property will have its key value pair
+// - put properties/method inside, and each property will have its key value/function pair
 
 let grace = {
      name: "Haijing",
@@ -54,8 +54,7 @@ let grace = {
       this.blogs.forEach(blogs =>{ //callback
         console.log(blogs); //return each blogs defined in the objects.
       });
-
-  }
+   }
 };
 
 // add methods to OBJECTS
