@@ -23,3 +23,15 @@
 // - interact with HTML document from our javascript code to do things
 // - browser models html document, so it's called "document" object model
 // - DOM contains many properties & methods we can use to interact with the html5
+
+
+// - now try input document // document.location // document.URL // document.getElementById('id')//document.getElementByClass
+// - hierachy tree of models, all elements in html are considered as nodes in DOM
+//   --- html （root node）
+//   --- head
+//   ---- title (textnode)
+//   --- body
+//   ---- h1, div (elementnode )
+//   ----- p (textnode)
+
+// manipulating with DOM 
