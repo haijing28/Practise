@@ -99,7 +99,26 @@ console.log(titletitle.innerText); //innerText is a propertyname
 titletitle.innerText += " & awesome !" // append extra text "awesome"
 
 const allall = document.querySelectorAll('p');
+
 allall.forEach(all =>{
-  console.log(allall.innerText)
-  p.innerText += "!!";
+  console.log(all.innerText);
+  all.innerText += '.';
 });
+
+// change html inside
+
+const contenta = document.querySelector('.Content');
+console.log(contenta.innerHTML);
+
+contenta.innerHTML = "<h2>Overwrite</h2>";
+contenta.innerHTML += "<h3>Plus More</h3>";
+
+
+// list of an array of people
+const nouns = ["&#129315;","&#128007;","&#x1F31D;","&#x2744;","&#10084;","&#x2728;","&#x2614;" ]
+
+nouns.forEach(descriptions =>{
+  contenta.innerHTML+= `<p>${descriptions}</p>`;
+});
+
+//contenta.innerHTML += "<h3>Plus More</h3>";
