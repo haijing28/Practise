@@ -45,12 +45,11 @@ console.log(para);
 const para2 =document.querySelector('.CoolFolks'); // index class
 console.log(para2);
 
-const para3 =document.querySelector('div.CoolFolks'); //way to define the unique css element manually
-const para4 =document.querySelector('body > div.CoolFolks');
+const para3 =document.querySelector('div.CoolFolk'); //way to define the unique css element manually
+const para4 =document.querySelector('body > div.CoolFolk');
 console.log(para3,para4); // by using browser to get unique css selectorVaue. in this case is "body > div.CoolFolks"
 
 // grab mutile elements
-
 const paras = document.querySelectorAll('div');// get all css slector elements with "div" tag
 const parapara = document.querySelectorAll('p');
 
@@ -62,4 +61,45 @@ parapara.forEach(lovely =>{
  console.log(lovely);
 }); // we can also use forEach
 
-console.log(parapara[2]);
+console.log(parapara[0]);
+
+const liberty = document.querySelectorAll('.CoolFolk');
+console.log(liberty);
+
+//querySelector & querySelectorAll on DOM grab elements from css
+
+
+// getElementById &getElementsByClassName('className')
+
+// get and elements by ID
+const PageTitle = document.getElementById('Page-Title');
+console.log(PageTitle);
+
+// get element by their class name
+const folkfolks = document.getElementsByClassName('CoolFolk');
+console.log(folkfolks);
+
+// HTMLColection & NodeList smiliar but not identical
+// - nodelist get single element by using [] & using ForEach
+// - ForEach could not be used in HTMLCollection
+
+// get element by their tag name
+
+const p = document.getElementsByTagName('p');
+console.log(p);
+console.log(p[2]);
+
+
+// change text
+
+const titletitle = document.querySelector('#Page-Title');
+
+console.log(titletitle.innerText); //innerText is a propertyname
+// titletitle.innerText = "Practise makes awesome !"
+titletitle.innerText += " & awesome !" // append extra text "awesome"
+
+const allall = document.querySelectorAll('p');
+allall.forEach(all =>{
+  console.log(allall.innerText)
+  p.innerText += "!!";
+});
