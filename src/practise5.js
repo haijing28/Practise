@@ -34,4 +34,32 @@
 //   ---- h1, div (elementnode )
 //   ----- p (textnode)
 
-// manipulating with DOM 
+// manipulating with DOM
+
+// which element we want to manipulate with ? reaching to the DOM
+
+// css selector as string
+const  para = document.querySelector('p') ;//grab an element from DOM , in this case the first p tag
+console.log(para);
+
+const para2 =document.querySelector('.CoolFolks'); // index class
+console.log(para2);
+
+const para3 =document.querySelector('div.CoolFolks'); //way to define the unique css element manually
+const para4 =document.querySelector('body > div.CoolFolks');
+console.log(para3,para4); // by using browser to get unique css selectorVaue. in this case is "body > div.CoolFolks"
+
+// grab mutile elements
+
+const paras = document.querySelectorAll('div');// get all css slector elements with "div" tag
+const parapara = document.querySelectorAll('p');
+
+console.log(paras);
+console.log(parapara);  // In DOM we have NodeList [p,p,p] which is array alike, but we can not use arraymethods to it
+console.log(parapara[0]);  // Group of elements/nodes, like Array, we use [] to index sequences
+
+parapara.forEach(lovely =>{
+ console.log(lovely);
+}); // we can also use forEach
+
+console.log(parapara[2]);
