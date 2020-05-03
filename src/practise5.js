@@ -138,3 +138,5 @@ const mssg = document.querySelector('p'); //p tag
 console.log(mssg.getAttribute('class'));
 mssg.setAttribute('class','Cooler People');
 console.log(mssg);
+
+//35:00
