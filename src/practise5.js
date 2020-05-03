@@ -113,7 +113,6 @@ console.log(contenta.innerHTML);
 contenta.innerHTML = "<h2>Overwrite</h2>";
 contenta.innerHTML += "<h3>Plus More</h3>";
 
-
 // list of an array of people
 const nouns = ["&#129315;","&#128007;","&#x1F31D;","&#x2744;","&#10084;","&#x2728;","&#x2614;" ]
 
@@ -122,3 +121,20 @@ nouns.forEach(descriptions =>{
 });
 
 //contenta.innerHTML += "<h3>Plus More</h3>";
+
+
+// grabbing element of DOM & manipulate with js
+
+const links = document.querySelector('a'); //anhor tag
+console.log(links.getAttribute('href'));
+
+//change & set attribute
+links.setAttribute('href','www.designlens.info');
+console.log(links.getAttribute('href'));
+links.innerText = 'DesignLens';
+
+const mssg = document.querySelector('p'); //p tag
+
+console.log(mssg.getAttribute('class'));
+mssg.setAttribute('class','Cooler People');
+console.log(mssg);
