@@ -139,3 +139,8 @@ mssg.setAttribute('class','Cooler People');
 console.log(mssg);
 
 //35:00
+
+const PageTitle2 = document.querySelector('#h1');
+console.log(PageTitle2);
+
+PageTitle2.setAttribute('style','#F5345D');
