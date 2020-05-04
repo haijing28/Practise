@@ -141,6 +141,6 @@ console.log(mssg);
 //35:00
 
 const PageTitle2 = document.querySelector('#h1');
-console.log(PageTitle2);
+console.log(PagetTitle2.getAttribute("style"));
 
 PageTitle2.setAttribute('style','#F5345D');
