@@ -107,7 +107,7 @@ allall.forEach(all =>{
 
 // change html inside
 
-const contenta = document.querySelector('.Content');
+const contenta = document.querySelector('.Content'); //get an reference of this,
 console.log(contenta.innerHTML);
 
 contenta.innerHTML = "<h2>Overwrite</h2>";
@@ -116,26 +116,25 @@ contenta.innerHTML += "<h3>Plus More</h3>";
 // list of an array of people
 const nouns = ["&#129315;","&#128007;","&#x1F31D;","&#x2744;","&#10084;","&#x2728;","&#x2614;" ]
 
-nouns.forEach(descriptions =>{
-  contenta.innerHTML+= `<p>${descriptions}</p>`;
+nouns.forEach(emojis =>{
+  contenta.innerHTML+= `<p>${emojis}</p>`;
 });
 
-//contenta.innerHTML += "<h3>Plus More</h3>";
 
-
-// grabbing element of DOM & manipulate with js
-
-const links = document.querySelector('a'); //anhor tag
-console.log(links.getAttribute('href'));
+// get & update attributes in HTML
+//  - grabbing element of DOM & manipulate with js
+//  - anhor tag
+const links = document.querySelector('a');
+console.log(links.getAttribute('href')); // getAttribute & passing arguments
 
 //change & set attribute
 links.setAttribute('href','www.designlens.info');
 console.log(links.getAttribute('href'));
 links.innerText = 'DesignLens';
 
-const mssg = document.querySelector('p'); //p tag
-
-console.log(mssg.getAttribute('class'));
+//  - p tag
+const mssg = document.querySelector('p');
+console.log(mssg.getAttribute('class')); // getAttribute & passing arguments
 mssg.setAttribute('class','Cooler People');
 console.log(mssg);
 
