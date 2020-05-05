@@ -120,12 +120,18 @@ nouns.forEach(emojis =>{
   contenta.innerHTML+= `<p>${emojis}</p>`;
 });
 
-
 // get & update attributes in HTML
 //  - grabbing element of DOM & manipulate with js
 //  - anhor tag
 const links = document.querySelector('a');
 console.log(links.getAttribute('href')); // getAttribute & passing arguments
+
+// -- change CSS style
+// -- getAttribute & setAttribute
+const StyleOfH1 = document.querySelector('h1');
+console.log(StyleOfH1);
+console.log(StyleOfH1.getAttribute('style'));
+StyleOfH1.setAttribute('style','color:#F5345D');
 
 //change & set attribute
 links.setAttribute('href','www.designlens.info');
@@ -138,9 +144,24 @@ console.log(mssg.getAttribute('class')); // getAttribute & passing arguments
 mssg.setAttribute('class','Cooler People');
 console.log(mssg);
 
-//35:00
+// == style.proppertyName = “Values”；
+console.log(StyleOfH1.style);
+console.log(StyleOfH1.style.color);
 
-const PageTitle2 = document.querySelector('#h1');
-console.log(PagetTitle2.getAttribute("style"));
+StyleOfH1.style.margin="50px";
+StyleOfH1.style.color="#24C2F5";
 
-PageTitle2.setAttribute('style','#F5345D');
+console.log(StyleOfH1.style.margin);
+
+//font-size: in JS fontSize
+StyleOfH1.style.fontSize= "0.7em";
+StyleOfH1.style.margin= ""; // remove orginally margin
+
+// class in css & manipulate with JS
+
+const cooolfolk =document.querySelector('div');
+console.log(cooolfolk);
+console.log(cooolfolk.classList);
+cooolfolk.classList.add('CoolFolk');
+cooolfolk.classList.remove('CoolFolk');
+cooolfolk.classList.add('Content');

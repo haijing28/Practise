@@ -16,12 +16,14 @@ div{
 .CoolFolk{
   position: relative;
   display:inline-block;
+  border: 1px dotted green;
 
 }
 .Content{
     position: relative;
     display:inline-block;
     padding:0.2em;
+    border: 1px dotted lime;
 }
 .p{
 display:inline-block;
