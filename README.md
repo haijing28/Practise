@@ -49,4 +49,18 @@ Objects
  
 DOM
  - Intro to DOM
-
+ - Hierachy Tree of Models
+ - css Selector as a String
+ - Document.
+ - getElementByID
+ - getElementsByTagName
+ - getElementsByClassName
+ - querySelector
+ - querySelectorAll
+ - getAttribute
+ - setAttribute 
+ - innerText
+ - innerHTML
+ - classList
+ - classList.add/remove
+ - classList.toggle
