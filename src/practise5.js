@@ -194,3 +194,5 @@ const titleEverything = document.querySelector('#Page-Title')
 console.log(titleEverything);
 
 titleEverything.classList.toggle('test');
+
+//toggleMethod Done
