@@ -165,3 +165,24 @@ console.log(cooolfolk.classList);
 cooolfolk.classList.add('CoolFolk');
 cooolfolk.classList.remove('CoolFolk');
 cooolfolk.classList.add('Content');
+
+const trytrys =document.querySelectorAll('p');
+console.log(trytrys);
+console.log(trytrys.classList);
+// trytrys.forEach(hahaha=>{
+//   console.log(hahaha.innerText);
+// });
+
+trytrys.forEach(words=>{
+
+  if(words.textContent.includes('Content')){
+  console.log(words.textContent);
+  words.classList.add('Content');
+}
+  if(words.innerText.includes('CoolFolk')){
+  words.ClassList.add('CoolFolk');
+  }
+});
+
+
+//46.25 bug would work on  
