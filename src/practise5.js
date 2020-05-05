@@ -173,16 +173,24 @@ console.log(trytrys.classList);
 //   console.log(hahaha.innerText);
 // });
 
-trytrys.forEach(words=>{
+// trytrys.forEach(words=>{
+//
+//   if(words.textContent.includes('Content')){
+//   console.log(words.textContent);
+//   words.classList.add('Content');
+// }
+//   if(words.innerText.includes('CoolFolk')){
+//   words.ClassList.add('CoolFolk');
+//   }
+// });
 
-  if(words.textContent.includes('Content')){
-  console.log(words.textContent);
-  words.classList.add('Content');
-}
-  if(words.innerText.includes('CoolFolk')){
-  words.ClassList.add('CoolFolk');
-  }
-});
 
+//46.25 bug would work on
 
-//46.25 bug would work on  
+// toggle
+
+const titleEverything = document.querySelector('#Page-Title')
+
+console.log(titleEverything);
+
+titleEverything.classList.toggle('test');
