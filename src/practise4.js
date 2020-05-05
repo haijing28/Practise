@@ -42,8 +42,19 @@ const thesis = [
 
 console.log(thesis);
 
+
+// create objects in an array
+
+const thesis = [
+    { title: 'data & democracy', like:'30' },
+    { title: 'big Beautiful', like:'40' },
+    { title: 'poetic industry', like:'50' }
+];
+
+console.log(thesis);
+
 let grace = {
-<<<<<<< HEAD
+
      name: "Haijing",
      age:21,
      email:"liuh494@newschool.edu ",
@@ -67,7 +78,7 @@ let grace = {
         console.log(blogs); //return each blogs defined in the objects.
       });
    }
-=======
+
        name: "Haijing",
        age:21,
        email:"liuh494@newschool.edu ",
@@ -96,7 +107,6 @@ let grace = {
           console.log(thesis.title, thesis.likes); //return each blogs defined in the objects.
         });
     }
->>>>>>> 2f0f1dc2b3633a2917666a9e865757f3eb2aae8a
 };
 
 // add methods to OBJECTS
